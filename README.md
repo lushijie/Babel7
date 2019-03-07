@@ -15,7 +15,7 @@ when specifying the esmodules target, browsers targets will be ignored.   （"ta
       {
       	"debug": false, // 默认， true 可以查看不同的浏览器应用了哪儿些 plugin，哪儿些文件用了哪儿些 polyfills
       	"loose": false, // 默认，loose 模式是不太忠实于ES6语义的， es5 => es6 可能会出问题
-        "useBuiltIns": false, // 默认，entry：入口文件处写 import '@babel/polyfill', 编译过程中替换掉； usage: 按需引入代码中用到的polyfill
+        "useBuiltIns": false, // 默认，entry：入口文件处写 import '@babel/polyfill', 编译过程中替换掉； usage: 按需引入代码中用到的polyfill, 推荐使用 usage
       }
     ]
 ]

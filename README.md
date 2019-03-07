@@ -6,6 +6,8 @@
 
 when specifying the esmodules target, browsers targets will be ignored.   （"targets": {  "esmodules": true  }）
 
+[browserslist](./browserslist.md)
+
 ```js
 "presets": [
     [

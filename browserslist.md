@@ -54,6 +54,30 @@ IE 10 # sorry
 | not dead | 全球使用率低于0.5%并且官方声明不在维护或者两年没有再更新的版本属于dead, 目前IE10、IE_Mob 已经dead |
 | > 5% in my stats | [使用定制的浏览器统计数据](https://github.com/browserslist/browserslist#custom-usage-data)|
 
+## 浏览器标识
+
+大小写不敏感
+
+- Android for Android WebView.
+- Baidu for Baidu Browser.
+- BlackBerry or bb for Blackberry browser.
+- Chrome for Google Chrome.
+- ChromeAndroid or and_chr for Chrome for Android
+- Edge for Microsoft Edge.
+- Electron for Electron framework. It will be converted to Chrome version.
+- Explorer or ie for Internet Explorer.
+- ExplorerMobile or ie_mob for Internet Explorer Mobile.
+- Firefox or ff for Mozilla Firefox.
+- FirefoxAndroid or and_ff for Firefox for Android.
+- iOS or ios_saf for iOS Safari.
+- Opera for Opera.
+- OperaMini or op_mini for Opera Mini.
+- OperaMobile or op_mob for Opera Mobile.
+- QQAndroid or and_qq for QQ Browser for Android.
+- Safari for desktop Safari.
+- Samsung for Samsung Internet.
+- UCAndroid or and_uc for UC Browser for Android.
+
 ## 环境差异化配置
 
 Browserslist 将依赖BROWSERSLIST_ENV 或者 NODE_ENV查询浏览器版本范围。

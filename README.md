@@ -8,16 +8,6 @@ inject polyfill by [browserslist](./browserslist.md)
 
 stage0 - stage3: @babel/plugin-proposal-
 
-```js
-"presets": [
-  [
-    "@babel/preset-env",
-    {
-      "targets": {  "esmodules": true  }
-    }
-  ]
-]
-```
 
 ```js
 "presets": [
@@ -27,7 +17,7 @@ stage0 - stage3: @babel/plugin-proposal-
       	"debug": false, // 默认， true 可以查看不同的浏览器应用了哪儿些 plugin，哪儿些文件用了哪儿些 polyfills
       	"loose": false, // 默认，loose 模式是不太忠实于ES6语义的， es5 => es6 可能会出问题
         "useBuiltIns": false, // 默认，entry：入口文件处写 import '@babel/polyfill', 编译过程中替换掉； usage: 按需引入代码中用到的polyfill, 推荐使用 usage
-        "targets": {"esmodules": false} // default false, when specifying the esmodules to true, browsers targets will be ignored
+        "targets": {"esmodules": false} // 默认, 当指定为true，browserslist不再生效
       }
     ]
 ]

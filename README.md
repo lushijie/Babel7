@@ -41,5 +41,5 @@ when specifying the esmodules target, browsers targets will be ignored.   （"ta
 
 ```js
 require("@babel/register");
-require("./index.js"); // 如果 index.js 含有 export default 就可以解析啦
+require("./index.js"); // index.js 含有 export default 可以解析
 ```

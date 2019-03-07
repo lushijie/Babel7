@@ -1,0 +1,24 @@
+{
+  "name": "Babel7",
+  "version": "1.0.0",
+  "description": "Usage of Babel7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel index.js --out-file index.es5.js"
+  },
+  "author": "lushijie1218@126.com",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.3.4",
+    "core-js": "^2.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4"
+  }
+}

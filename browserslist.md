@@ -110,7 +110,7 @@ last 1 chrome version
 last 1 firefox version
 ```
 
-## 继承
+## browserslist 继承
 
 #### package.json
 
@@ -122,7 +122,7 @@ last 1 firefox version
 ]
 ```
 
-#### browserslist package content
+#### browserslist 继承包的书写方式
 
 ```js
 module.exports = [
@@ -131,7 +131,7 @@ module.exports = [
 ]
 ```
 
-## 验证
+## 结果验证
 
 1. npx browserslist 打印出所有浏览器版本支出情况
 2. [https://browserl.ist/](https://browserl.ist/)

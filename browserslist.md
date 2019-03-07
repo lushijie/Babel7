@@ -11,7 +11,7 @@
 
 等
 
-## 示例
+## 配置示例
 
 // package.json
 
@@ -35,7 +35,7 @@ IE 10 # sorry
 ```
 
 
-## 配置规则说明
+## 配置规则
 
 | 格式        | 说明         |
 | ------------- |-------------|
@@ -49,18 +49,17 @@ IE 10 # sorry
 | Firefox 12.1(IE 9) | 指定浏览器的兼容到指定版本 |
 | unreleased versions | 所有浏览器的beta测试版本 |
 | unreleased Chrome versions | 指定浏览器的测试版本 |
-| since 2013 (last 2 years)| 2013年之后发布的所有版本 |
+| since 2013 | 2013年之后发布的所有版本 |
+| last 2 years| 最近两年发布的所有版本 |
 | not dead | 全球使用率低于0.5%并且官方声明不在维护或者两年没有再更新的版本属于dead, 目前IE10、IE_Mob 已经dead |
 | > 5% in my stats | [使用定制的浏览器统计数据](https://github.com/browserslist/browserslist#custom-usage-data)|
-
-## 浏览器
 
 ## 环境差异化配置
 
 Browserslist 将依赖BROWSERSLIST_ENV 或者 NODE_ENV查询浏览器版本范围。
 如果两个环境变量都没有配置正确的查询条件，那么优先从 production 对应的配置项加载查询条件。
 
-// package.json
+#### package.json
 
 ```js
 "browserslist": {
@@ -75,7 +74,7 @@ Browserslist 将依赖BROWSERSLIST_ENV 或者 NODE_ENV查询浏览器版本范�
 }
 ```
 
-// .browserslistrc
+#### .browserslistrc
 
 ```
 [production staging]
@@ -89,7 +88,7 @@ last 1 firefox version
 
 ## 继承
 
-// package.json
+#### package.json
 
 ```js
 "browserslist": [
@@ -99,7 +98,7 @@ last 1 firefox version
 ]
 ```
 
-// browserslist package
+#### browserslist package content
 
 ```js
 module.exports = [

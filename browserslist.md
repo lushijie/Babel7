@@ -2,12 +2,12 @@
 
 使用 [browserslist](https://salsa.debian.org/js-team/node-browserslist) 的工具：
 
-autoprefixer
-bable-preset-env
-post-preset-env
-eslint-plugin-compat
-stylelint-unsupported-browser-features
-postcss-normalize
+- autoprefixer
+- bable-preset-env
+- post-preset-env
+- eslint-plugin-compat
+- stylelint-unsupported-browser-features
+- postcss-normalize
 
 等
 

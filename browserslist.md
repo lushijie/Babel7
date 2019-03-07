@@ -13,7 +13,7 @@
 
 ## 配置示例
 
-// package.json
+#### package.json
 
 ```js
 {
@@ -24,7 +24,7 @@
 }
 ```
 
-// .browserslistrc
+#### .browserslistrc
 
 ```
 # Browsers that we support

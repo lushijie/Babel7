@@ -3,7 +3,8 @@
     [
       "@babel/preset-env",{
         "debug": false,
-        "useBuiltIns": "usage"
+        "useBuiltIns": "usage",
+        "modules": "auto"
     }]
   ],
   "plugins": [

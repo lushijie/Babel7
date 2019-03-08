@@ -10,4 +10,6 @@ class Point {
 
 'foobar'.includes('foo');
 
-function* foo() {}
+function* fun() {}
+
+export default Point;

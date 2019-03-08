@@ -11,17 +11,6 @@ var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/cl
 
 var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
 
-require("core-js/modules/es7.array.includes");
-
-require("core-js/modules/es6.string.includes");
-
-require('./index2.js');
-
-[1, 2, 3].map(function (n) {
-  return n + 1;
-});
-"foobar".includes("foo");
-
 var Point =
 /*#__PURE__*/
 function () {
@@ -32,13 +21,12 @@ function () {
   }
 
   (0, _createClass2.default)(Point, [{
-    key: "toString",
-    value: function toString() {
+    key: "getPosition",
+    value: function getPosition() {
       return "(".concat(this.x, ", ").concat(this.y, ")");
     }
   }]);
   return Point;
 }();
 
-var _default = Point;
-exports.default = _default;
+exports.default = Point;

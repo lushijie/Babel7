@@ -3,12 +3,13 @@
     [
       "@babel/preset-env",
       {
-        "debug": true,
-        "useBuiltIns": "usage"
+        "debug": false,
+        "useBuiltIns": "usage",
+        "modules": "umd"
       }
     ]
   ],
   "plugins": [
-    "@babel/plugin-transform-runtime"
+
   ]
 }

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "babel index.js --out-file index.es5.js"
+    "compile": "babel index.js --out-file index.es5.js",
+    "register": "babel babel-register/index.js --out-file babel-register/index.es5.js"
   },
   "author": "lushijie1218@126.com",
   "license": "ISC",

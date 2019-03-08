@@ -2,7 +2,7 @@
 
 ## @babel/preset-env
 
-inject polyfill by [browserslist](./browserslist.md)
+inject polyfill by [browserslist](./browserslist/readme.md)
 
 @babel/preset-env does not support stage-x plugins(stage0 idea-> stage4 Finished).
 
@@ -14,14 +14,15 @@ stage0 - stage3: @babel/plugin-proposal-
     [
       "@babel/preset-env",
       {
-      	"debug": false, // 默认， true 可以查看不同的浏览器应用了哪儿些 plugin，哪儿些文件用了哪儿些 polyfills
-      	"loose": false, // 默认，loose 模式是不太忠实于ES6语义的， es5 => es6 可能会出问题
-        "useBuiltIns": false, // 默认，entry：入口文件处写 import '@babel/polyfill', 编译过程中替换掉； usage: 按需引入代码中用到的polyfill, 推荐使用 usage
-        "targets": {"esmodules": false} // 默认, 当指定为true，browserslist不再生效
+      	"debug": false,
+      	"loose": false,
+        "useBuiltIns": false
       }
     ]
 ]
 ```
+
+[detail doc @babel/preset-env](./babel-preset-env/readme.md)
 
 ## @babel/plugin-transform-runtime
 
@@ -39,9 +40,16 @@ stage0 - stage3: @babel/plugin-proposal-
 
 ## @babel/register
 
-对require的js、es、jsx、es6后缀的文件进行转码，且不会对当前文件进行转码（实时转码所以只适合开发阶段）
+All subsequent files required by node with the extensions .es6, .es, .jsx, .mjs, and .js will be transformed by Babel, but the file itself.
+
+Polyfill not included
+
+Your code should load the plugin/preset first if you need.
 
 ```js
-require("@babel/register");
-require("./index.js"); // index.js 含有 export default 可以解析
+require('@babel/register');
+require('plugin.preset');
+require('./index.js'); // export default in index.js would be parsed
 ```
+
+[code demo @babel/register](./babel-register)

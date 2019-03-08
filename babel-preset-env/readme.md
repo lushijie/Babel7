@@ -6,16 +6,13 @@
     [
       "@babel/preset-env",
       {
-        "targets": "> 0.25%, not dead",
-        "debug": true,
+        "targets": "last 1 version, > 0.1%, not dead",
+        "debug": false,
         "useBuiltIns": "usage",
         "modules": "auto"
         // ...
       }
     ]
-  ],
-  "plugins": [
-
   ]
 }
 ```
@@ -27,9 +24,7 @@
 
 ## debug
 
-boolean, defaults to false.
-
-true 打开调试
+默认 false, true 打开调试
 
 ## targets
 
@@ -76,3 +71,4 @@ Array<string|RegExp>, defaults to [].
 
 指定总不导入的插件
 
+## [更多配置](https://babeljs.io/docs/en/babel-preset-env#targets)

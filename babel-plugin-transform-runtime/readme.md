@@ -1,6 +1,8 @@
 # @babel/plugin-transform-runtime
 
-yarn @babel/runtime @babel/plugin-transform-runtime --save
+yarn add @babel/runtime --save
+
+yarn add @babel/plugin-transform-runtime --dev
 
 Babel 转译后的代码要实现源代码同样的功能需要借助一些帮助函数， 例如帮助函数 _defineProperty 可能会重复出现在一些模块里，导致编译后的代码体积变大。
 

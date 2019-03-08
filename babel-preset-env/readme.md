@@ -1,6 +1,8 @@
 # @babel/preset-env
 
-yarn @babel/preset-env --save
+yarn add @babel/preset-env --dev
+
+yarn add core-js --save
 
 inject polyfill by [browserslist](./browserslist/readme.md)
 

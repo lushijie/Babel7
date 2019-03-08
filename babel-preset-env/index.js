@@ -1,1 +1,2 @@
-"foobar".includes("foo");
+const a = new Set();
+'foobar'.includes('foo');

@@ -1,13 +1,10 @@
 {
   "presets": [
     [
-      "@babel/preset-env",
-      {
+      "@babel/preset-env",{
         "debug": false,
-        "useBuiltIns": "usage",
-        "modules": "umd"
-      }
-    ]
+        "useBuiltIns": "usage"
+    }]
   ],
   "plugins": [
 

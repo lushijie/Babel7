@@ -1,4 +1,14 @@
-# @babel/preset-env options
+# @babel/preset-env
+
+yarn @babel/preset-env --save
+
+inject polyfill by [browserslist](./browserslist/readme.md)
+
+@babel/preset-env does not support stage-x plugins(stage0 idea-> stage4 Finished).
+
+stage0 - stage3: @babel/plugin-proposal-
+
+包含新的ES API (如Set)和新增的原型方法（如Array.form）。
 
 ```js
 {
@@ -19,8 +29,8 @@
 ## useBuiltIns
 
 - 默认 false，不引入 babel-polyfill
-- entry, 在入口引入整个polyfill， 需要在入口处书写 require("@babel/polyfill");
-- usage, 依据代码中的实际使用按需引入（推荐）
+- entry, 在入口引入整个polyfill， 需要在入口处书写 require("@babel/polyfill")
+- usage, 依据代码中的实际使用按需引入（推荐）, yarn add core-js --save
 
 ## debug
 
@@ -57,7 +67,9 @@ Enable transformation of ES6 module syntax to another module type.
 
 ## loose
 
-默认 false，loose 模式是不太忠实于ES6语义的， es5 => es6 可能会出问题
+默认 false，
+
+true，代码更简单，但是loose 模式是不太忠实于ES6语义的， es5 => es6 可能会出问题
 
 ## include
 
@@ -71,4 +83,4 @@ Array<string|RegExp>, defaults to [].
 
 指定总不导入的插件
 
-## [更多配置](https://babeljs.io/docs/en/babel-preset-env#targets)
+[更多配置](https://babeljs.io/docs/en/babel-preset-env#targets)

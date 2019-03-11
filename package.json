@@ -4,9 +4,7 @@
   "description": "Usage of Babel7",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "babel index.js --out-file index.es5.js",
-    "register": "babel babel-register/index.js --out-file babel-register/index.es5.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "lushijie1218@126.com",
   "license": "ISC",

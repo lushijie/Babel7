@@ -3,13 +3,11 @@
     [
       "@babel/preset-env",
       {
-        "debug": true,
         "useBuiltIns": "usage",
-        "modules": "auto"
       }
     ]
   ],
   "plugins": [
-
+    "@babel/plugin-transform-runtime"
   ]
 }

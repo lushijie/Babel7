@@ -3,13 +3,10 @@
     [
       "@babel/preset-env",
       {
+        "targets": "node 8",
         "debug": true,
-        "useBuiltIns": "usage",
-        "modules": "auto"
+        "useBuiltIns": false
       }
     ]
-  ],
-  "plugins": [
-
   ]
 }

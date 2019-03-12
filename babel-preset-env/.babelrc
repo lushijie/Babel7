@@ -8,6 +8,11 @@
         "targets": "node 8",
         "useBuiltIns": "entry"
       }
+    ],
+    [
+      "minify", {
+        "removeConsole": true
+      }
     ]
   ]
 }

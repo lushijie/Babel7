@@ -11,7 +11,8 @@
       {
         "useBuiltIns": "usage"
       }
-    ]
+    ],
+    "minify"
   ],
   "plugins": [
     "@babel/plugin-transform-runtime"

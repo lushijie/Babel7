@@ -30,9 +30,9 @@ stage0 - stage3: @babel/plugin-proposal-
 ```
 ## useBuiltIns
 
-- 默认 false，不引入 babel-polyfill
-- entry, 在入口引入整个polyfill， 需要在`入口处`书写 require("@babel/polyfill")
-- usage, 依据代码中的实际使用按需引入（推荐）, yarn add core-js --save
+- 默认 false，不自动引入 babel-polyfill，require("@babel/polyfill")全量引入，不参考 targets 配置
+- entry, 在入口引入整个polyfill， 需要在`入口处`书写 require("@babel/polyfill")，参考 targets 配置
+- usage, 依据代码中的实际使用按需引入（推荐）, yarn add core-js --save，参考 targets 配置
 
 ## debug
 

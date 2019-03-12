@@ -105,6 +105,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// import _ from 'lodash'; unused 引入也会增加包的体积
+ // entry 方式 如果 index2 也包含@babel/polyfill，体积会变大（引用）
 
 'footbar'.includes('foo');
 

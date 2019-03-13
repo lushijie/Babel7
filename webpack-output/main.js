@@ -101,7 +101,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es7_promise_finally__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_promise_finally__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var core_js_modules_es7_symbol_async_iterator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/es7.symbol.async-iterator */ "./node_modules/core-js/modules/es7.symbol.async-iterator.js");
 /* harmony import */ var core_js_modules_es7_symbol_async_iterator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es7_symbol_async_iterator__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _index2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index2 */ "./babel-preset-env/index2.js");
+/* harmony import */ var _index2__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index2__WEBPACK_IMPORTED_MODULE_3__);
+// import _ from 'lodash'; // unused 引入也会增加包的体积
+// entry 方式 如果 index2 也包含@babel/polyfill，体积会变大（引用）
 void 0,"footbar".includes("foo");class Person{}new Promise(a=>{a()}).finally(()=>{});
+
+/***/ }),
+
+/***/ "./babel-preset-env/index2.js":
+/*!************************************!*\
+  !*** ./babel-preset-env/index2.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// import '@babel/polyfill';
+new Promise(a=>{a()}).finally(()=>{});
 
 /***/ }),
 

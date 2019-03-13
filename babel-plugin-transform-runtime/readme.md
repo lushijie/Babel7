@@ -43,4 +43,5 @@ false， 使用 inline 方式引入
 When enabled, the transform will use helpers that do not get run through @babel/plugin-transform-modules-commonjs. This allows for smaller builds in module systems like webpack, since it doesn't need to preserve commonjs semantics.
 
 // false: var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+
 // true: var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/createClass"));

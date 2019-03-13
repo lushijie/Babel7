@@ -1,6 +1,6 @@
-# Babel7
+## Babel7
 
-[最佳 babel7 配置](./babel7.config.md)
+[babel7 配置最佳实践](./babel7.config.md)
 
 ---
 

@@ -4,7 +4,7 @@ yarn add @babel/preset-env --dev
 
 yarn add core-js --save
 
-inject polyfill by [browserslist](./browserslist/readme.md)
+inject polyfill by [browserslist](../browserslist/readme.md)
 
 @babel/preset-env does not support stage-x plugins(stage0 idea-> stage4 Finished).
 

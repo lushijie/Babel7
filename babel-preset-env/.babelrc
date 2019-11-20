@@ -4,9 +4,9 @@
       "@babel/preset-env",
       {
         "debug": true,
+        // "targets": "node 8",
         // "targets": "last 1 version",
-        "targets": "node 8",
-        "useBuiltIns": "entry"
+        "useBuiltIns": "usage"
       }
     ],
     [

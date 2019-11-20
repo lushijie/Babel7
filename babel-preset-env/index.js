@@ -1,10 +1,15 @@
-import '@babel/polyfill';
-// import _ from 'lodash'; // unused 引入也会增加包的体积
-import './index2'; // entry 方式 如果 index2 也包含@babel/polyfill，体积会变大（引用）
-console.log(123);
-'footbar'.includes('foo');
+// import '@babel/polyfill';
+
+// import './index2'; // entry 方式 如果 index2 也包含@babel/polyfill，体积会变大（引用）
+
+// 新语法
 class Person {};
 
+// 新API
+const s = new Set(['1', '1']);
+
+// 新方法
+'footbar'.includes('foo');
 new Promise((resolve, reject) => {
   resolve();
 }).finally(e => {

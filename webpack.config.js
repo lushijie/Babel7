@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
-    main: path.join(__dirname, '/babel-preset-env/index.js'),
-    // demo: path.join(__dirname, '/demo/index.js')
+    // main: path.join(__dirname, '/babel-preset-env/index.js'),
+    demo: path.join(__dirname, '/demo/index3.js')
   },
   devtool: '',
   output: {
